@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentMethod">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pm_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/pm_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textColor="@color/wine"
+        android:textSize="30sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/pm_toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/pm_toolbar1"
+        app:layout_constraintLeft_toLeftOf="@id/pm_toolbar1"
+        app:layout_constraintRight_toRightOf="@id/pm_toolbar1" />
+
+    <TextView
+        android:id="@+id/pm_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_toolbar1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/pm_imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/cash"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_textView2"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/pm_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="@id/pm_imageView1"
+        app:layout_constraintBottom_toBottomOf="@id/pm_imageView1"
+        app:layout_constraintLeft_toRightOf="@id/pm_imageView1"/>
+
+    <View
+        android:id="@+id/pm_divider1"
+        android:layout_width="245dp"
+        android:layout_height="2dp"
+        android:background="@color/golden_yellow"
+        app:layout_constraintTop_toBottomOf="@id/pm_imageView1"
+        app:layout_constraintBottom_toTopOf="@id/pm_imageView2"
+        app:layout_constraintLeft_toLeftOf="@id/pm_textView3" />
+
+    <ImageView
+        android:id="@+id/pm_imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/bt"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_divider1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/pm_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank Transfer"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toTopOf="@id/pm_imageView2"
+        app:layout_constraintBottom_toBottomOf="@id/pm_imageView2"
+        app:layout_constraintLeft_toRightOf="@id/pm_imageView2"/>
+
+    <RadioGroup
+        android:id="@+id/pm_radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pm_imageView1"
+        app:layout_constraintBottom_toBottomOf="@id/pm_imageView2" >
+
+        <RadioButton
+            android:id="@+id/pm_radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:buttonTint="@color/wine" />
+
+        <RadioButton
+            android:id="@+id/pm_radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:buttonTint="@color/wine" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pm_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Summary"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_imageView2"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/pm_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Bill"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_textView5"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/pm_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 105.000"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/pm_textView6"
+        app:layout_constraintBottom_toBottomOf="@id/pm_textView6"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/pm_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Charge"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_textView6"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/pm_textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 0"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/pm_textView8"
+        app:layout_constraintBottom_toBottomOf="@id/pm_textView8"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/pm_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/golden_yellow"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_textView8" />
+
+    <TextView
+        android:id="@+id/pm_textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/pm_divider2"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/pm_textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp. 105.000"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/pm_textView10"
+        app:layout_constraintBottom_toBottomOf="@id/pm_textView10"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/pm_button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/background_radius"
+        android:text="Continue"
+        android:textColor="@color/golden_yellow"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

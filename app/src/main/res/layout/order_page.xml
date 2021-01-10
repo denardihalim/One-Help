@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/op_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/op_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/op_toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/op_toolbar1"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/op_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Help"
+        android:textColor="@color/wine"
+        android:textSize="30sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/op_toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/op_toolbar1"
+        app:layout_constraintLeft_toLeftOf="@id/op_toolbar1"
+        app:layout_constraintRight_toRightOf="@id/op_toolbar1" />
+
+    <ImageView
+        android:id="@+id/op_imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/profile_v"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/op_toolbar1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/op_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/op_imageView2"/>
+
+    <TextView
+        android:id="@+id/op_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ari Rahmadsyah"
+        android:textColor="@color/wine"
+        android:textSize="28sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="@id/op_toolbar2"
+        app:layout_constraintLeft_toLeftOf="@id/op_toolbar2"
+        app:layout_constraintRight_toRightOf="@id/op_toolbar2" />
+
+    <Button
+        android:id="@+id/op_button1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/op_toolbar2"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/op_imageView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/chat"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/op_button1"
+        app:layout_constraintBottom_toBottomOf="@id/op_button1"
+        app:layout_constraintLeft_toLeftOf="@id/op_button1"/>
+
+    <TextView
+        android:id="@+id/op_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/op_button1"
+        app:layout_constraintBottom_toBottomOf="@id/op_button1"
+        app:layout_constraintLeft_toLeftOf="@id/op_button1"
+        app:layout_constraintRight_toRightOf="@id/op_button1" />
+
+    <Button
+        android:id="@+id/op_button2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/op_toolbar2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/op_imageView4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/call"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/op_button2"
+        app:layout_constraintBottom_toBottomOf="@id/op_button2"
+        app:layout_constraintLeft_toLeftOf="@id/op_button2"/>
+
+    <TextView
+        android:id="@+id/op_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/op_button2"
+        app:layout_constraintBottom_toBottomOf="@id/op_button2"
+        app:layout_constraintLeft_toLeftOf="@id/op_button2"
+        app:layout_constraintRight_toRightOf="@id/op_button2" />
+
+    <ImageView
+        android:id="@+id/op_imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/process"
+        app:layout_constraintTop_toBottomOf="@id/op_toolbar2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <TextView
+        android:id="@+id/op_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Processing"
+        android:textColor="@color/wine"
+        android:textSize="30sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/op_imageView5"
+        app:layout_constraintLeft_toLeftOf="@id/op_toolbar2"
+        app:layout_constraintRight_toRightOf="@id/op_toolbar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

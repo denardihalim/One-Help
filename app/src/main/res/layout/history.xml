@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/history_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/history_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textColor="@color/wine"
+        android:textSize="30sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/history_toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/history_toolbar1"
+        app:layout_constraintLeft_toLeftOf="@id/history_toolbar1"
+        app:layout_constraintRight_toRightOf="@id/history_toolbar1" />
+
+    <TextView
+        android:id="@+id/history_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="January"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/history_toolbar1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/history_Button1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/history_textView2" />
+
+    <ImageView
+        android:id="@+id/history_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/profile_v"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button1"
+        app:layout_constraintBottom_toBottomOf="@id/history_Button1"
+        app:layout_constraintLeft_toLeftOf="@id/history_Button1"/>
+
+    <TextView
+        android:id="@+id/history_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rudiyanto"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button1"
+        app:layout_constraintBottom_toBottomOf="@id/history_Button1"
+        app:layout_constraintLeft_toRightOf="@id/history_imageView1"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <TextView
+        android:id="@+id/history_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plumber"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button1"
+        app:layout_constraintBottom_toBottomOf="@id/history_Button1"
+        app:layout_constraintLeft_toRightOf="@id/history_imageView1"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/history_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Jan"
+        android:textColor="@color/wine"
+        android:textSize="18sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button1"
+        app:layout_constraintRight_toRightOf="@id/history_Button1" />
+
+    <View
+        android:id="@+id/history_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/golden_yellow"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintTop_toBottomOf="@id/history_Button1"/>
+
+    <TextView
+        android:id="@+id/history_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="February"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/history_divider1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/history_Button2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/history_textView6" />
+
+    <ImageView
+        android:id="@+id/history_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/profile_v"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button2"
+        app:layout_constraintBottom_toBottomOf="@id/history_Button2"
+        app:layout_constraintLeft_toLeftOf="@id/history_Button2"/>
+
+    <TextView
+        android:id="@+id/history_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rudi"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button2"
+        app:layout_constraintBottom_toBottomOf="@id/history_Button2"
+        app:layout_constraintLeft_toRightOf="@id/history_imageView2"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <TextView
+        android:id="@+id/history_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electrician"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button2"
+        app:layout_constraintBottom_toBottomOf="@id/history_Button2"
+        app:layout_constraintLeft_toRightOf="@id/history_imageView2"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/history_textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 Feb"
+        android:textColor="@color/wine"
+        android:textSize="18sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/history_Button2"
+        app:layout_constraintRight_toRightOf="@id/history_Button2" />
+
+    <LinearLayout
+        android:id="@+id/history_linearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="4"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/history_imageButton1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/home"
+            android:background="@drawable/gradient"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/history_imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/activity"
+            android:background="@drawable/gradient"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/history_imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/history"
+            android:background="@drawable/gradient_reverse"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/history_imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/profile"
+            android:background="@drawable/gradient"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/od_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageView
+        android:id="@+id/od_imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/od_toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/od_toolbar1"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/od_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electricity"
+        android:textColor="@color/wine"
+        android:textSize="30sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/od_toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/od_toolbar1"
+        app:layout_constraintLeft_toLeftOf="@id/od_toolbar1"
+        app:layout_constraintRight_toRightOf="@id/od_toolbar1" />
+
+    <TextView
+        android:id="@+id/od_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/od_toolbar1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <EditText
+        android:id="@+id/od_editTextTextMultiLine1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:hint="Type here..."
+        android:textColorHint="@color/dim_gray"
+        android:textSize="20sp"
+        android:textColor="@color/wine"
+        android:fontFamily="@font/anodina"
+        android:background="@drawable/border"
+        android:maxHeight="200dp"
+        app:layout_constraintTop_toBottomOf="@id/od_textView2"/>
+
+    <TextView
+        android:id="@+id/od_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment Time"
+        android:textColor="@color/wine"
+        android:textSize="25sp"
+        android:fontFamily="@font/anodina"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@id/od_editTextTextMultiLine1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Spinner
+        android:id="@+id/od_spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:prompt="@string/spinner_date"
+        android:spinnerMode="dialog"
+        android:entries="@array/date"
+        app:layout_constraintTop_toBottomOf="@id/od_textView3"
+        app:layout_constraintLeft_toLeftOf="@id/od_textView3"/>
+
+    <TextView
+        android:id="@+id/od_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/ January / 2021"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/od_spinner1"
+        app:layout_constraintBottom_toBottomOf="@id/od_spinner1"
+        app:layout_constraintLeft_toRightOf="@id/od_spinner1"/>
+
+    <Spinner
+        android:id="@+id/od_spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:prompt="@string/spinner_hour"
+        android:spinnerMode="dialog"
+        android:entries="@array/hour"
+        app:layout_constraintTop_toBottomOf="@id/od_spinner1"
+        app:layout_constraintLeft_toLeftOf="@id/od_textView3"/>
+
+    <TextView
+        android:id="@+id/od_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" / "
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/od_spinner2"
+        app:layout_constraintBottom_toBottomOf="@id/od_spinner2"
+        app:layout_constraintLeft_toRightOf="@id/od_spinner2"/>
+
+    <Spinner
+        android:id="@+id/od_spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinner_minute"
+        android:spinnerMode="dialog"
+        android:entries="@array/minute"
+        app:layout_constraintTop_toTopOf="@id/od_spinner2"
+        app:layout_constraintBottom_toBottomOf="@id/od_spinner2"
+        app:layout_constraintLeft_toRightOf="@id/od_textView5" />
+
+    <Button
+        android:id="@+id/od_button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/background_radius"
+        android:text="Continue"
+        android:textColor="@color/golden_yellow"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

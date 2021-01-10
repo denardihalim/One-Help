@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".FirstPage">
+
+    <TextView
+        android:id="@+id/fp_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/wine"
+        android:textSize="50sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <TextView
+        android:id="@+id/fp_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The best parner of yours"
+        android:textColor="@color/wine"
+        android:textSize="30sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toBottomOf="@id/fp_textView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/fp_button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_radius"
+        android:layout_marginHorizontal="15dp"
+        android:text="Login"
+        android:textColor="@color/golden_yellow"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/fp_button2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/fp_button2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_radius"
+        android:layout_marginHorizontal="15dp"
+        android:text="Sign Up"
+        android:textColor="@color/wine"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

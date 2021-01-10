@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentBTConfirmation">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/pbt_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/pbt_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textColor="@color/wine"
+        android:textSize="30sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toTopOf="@id/pbt_toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/pbt_toolbar1"
+        app:layout_constraintLeft_toLeftOf="@id/pbt_toolbar1"
+        app:layout_constraintRight_toRightOf="@id/pbt_toolbar1" />
+
+    <ImageView
+        android:id="@+id/pbt_imageView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/success"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/pbt_toolbar1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/pbt_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Successful !"
+        android:textColor="@color/wine"
+        android:textSize="40sp"
+        android:fontFamily="@font/anodina"
+        app:layout_constraintTop_toBottomOf="@id/pbt_imageView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/pbt_button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/background_radius"
+        android:text="Continue"
+        android:textColor="@color/golden_yellow"
+        android:textSize="20sp"
+        android:fontFamily="@font/anodina"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
